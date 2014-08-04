@@ -1,22 +1,7 @@
-function popVideo() {
-	this.options = {
-
-	};
-	this.create = function() {
-
+(function($){
+	$.fn.popVideo=function(options){
+		return this.each(function(){
+			$.extend(options,$.fn.popVideo.defaults);
+		})
 	}
-}
-var proto = {
-	attach:function(elements){
-	elements || (elements = jQuery(this.options.attach.selector));	
-	}
-}
-popVideo.prototype = proto;
-$.fn.popVideo = function(options) {
-
-	options || (options = {});
-	return new videopop($.extend(options, {
-		attach: this
-	}));
-
-}
+})($)
