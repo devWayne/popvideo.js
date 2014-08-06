@@ -1,31 +1,18 @@
-
-.pic a:hover .i-play { background-position: 0 -40px}
  /*pop-video*/
- .pic{
+ .pop-video{
     text-align: center;
     padding:20px 10px;
     display: inline-block;
     position: relative;
  }
- .pic img{
+.i-play {background-image: url(sprite.png); background-repeat: no-repeat; position: absolute; width: 59px; height: 59px; top: 50%; left: 50%; margin-left: -30px; margin-top: -50px; background-position: -60px -40px}
+.pop-video a:hover .i-play { background-position: 0 -40px}
+.pop-video img{
     width: 300px;
     height:180px;
  }
- .pic a{
-    text-decoration: none;
- }
- .p-txt{
-    width:300px;
-    line-height: 20px;
-    background-color: #950900;
-/* text-decoration: none; */
-color: white;
-font-size: 14px;
-font-weight: 100;
-padding: 10px 0px;
- }
-.pop-video { position: fixed; width: 480px; padding: 5px 10px 10px; border-radius: 5px; top: 50%; margin-top: -255px; left: 50%; margin-left: -249px; background-color: #fafafa}
-.pop-video .hd { position: relative; padding: 5px 0 10px}
-.pop-video .hd .tit { font: 18px/20px "Microsoft Yahei", "Hiragino Sans GB", sans-serif; color: #710c0c}
-.pop-video .close { position: absolute; right: -20px; top: -15px; display: block; background-color: #000; width: 30px; height: 30px; border-radius: 15px; color: #fff; line-height: 30px; text-align: center; font-size: 18px;text-decoration: none}
-.pop-video .close:hover { background-color: #710c0c}
+#pop_video { position: fixed; width: 480px; padding: 5px 10px 10px; border-radius: 5px; top: 50%; margin-top: -255px; left: 50%; margin-left: -249px; background-color: #fafafa}
+#pop_video .hd { position: relative; padding: 5px 0 10px}
+#pop_video .hd .tit { font: 18px/20px "Microsoft Yahei", "Hiragino Sans GB", sans-serif; color: #710c0c}
+#pop_video .close { position: absolute; right: -20px; top: -15px; display: block; background-color: #000; width: 30px; height: 30px; border-radius: 15px; color: #fff; line-height: 30px; text-align: center; font-size: 18px;text-decoration: none}
+#pop_video .close:hover { background-color: #710c0c}
